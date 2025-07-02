@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dimension_model
+    description: Dimension table of unique EV brand-model combinations
+    columns:
+      - name: model_id
+        description: Surrogate key for brand-model
+        tests:
+          - not_null
+          - unique
+      - name: brand
+        description: Car brand
+      - name: model
+        description: Car model

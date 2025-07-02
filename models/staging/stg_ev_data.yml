@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: RAW
+    schema: CARS
+    tables:
+      - name: ev_cars
+        description: Raw data containing specifications for electric vehicles

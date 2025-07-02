@@ -1,0 +1,75 @@
+version: 2
+
+models:
+  - name: fact_ev_specs
+    description: >
+      Fact table containing electric vehicle specifications,
+      joined with dimension_model on brand and model.
+    columns:
+      - name: model_id
+        description: Foreign key to dim_model
+        tests:
+          - not_null
+
+      - name: top_speed_kmh
+        description: Top speed in kilometers per hour
+      - name: battery_capacity_kWh
+        description: Battery size in kilowatt-hours
+      - name: battery_type
+        description: Battery technology
+      - name: number_of_cells
+        description: Battery cell count
+      - name: torque_nm
+        description: Torque in newton-meters
+      - name: efficiency_wh_per_km
+        description: Energy consumption
+      - name: range_km
+        description: Range in kilometers
+      - name: acceleration_0_100_s
+        description: 0 to 100 km/h acceleration time
+      - name: fast_charging_power_kw_dc
+        description: DC fast charging power
+      - name: fast_charge_port
+        description: Charging port type
+      - name: towing_capacity_kg
+        description: Max towing weight
+      - name: cargo_volume_l
+        description: Cargo volume in liters
+      - name: seats
+        description: Number of seats
+      - name: drivetrain
+        description: Drivetrain type (e.g., FWD)
+      - name: segment
+        description: Vehicle segment
+      - name: length_mm
+        description: Vehicle length
+      - name: width_mm
+        description: Vehicle width
+      - name: height_mm
+        description: Vehicle height
+      - name: car_body_type
+        description: Type of car body (e.g., SUV)
+      - name: source_url
+        description: Source link for data
+      - name: drivetrain_standardized
+        description: Normalized drivetrain value (e.g., FWD, AWD)
+
+      - name: segment_group
+        description: Primary segment group extracted from segment string
+
+      - name: car_body_type_standardized
+        description: Cleaned and capitalized car body type
+
+      - name: performance_category
+        description: Categorized acceleration (High = fast, Medium, Low = slow)
+      
+      - name: length_m
+        description: Length in meters
+      - name: width_m
+        description: Width in meters
+      - name: height_m
+        description: Height in meters
+      - name: fast_charging_ratio
+        description: Ratio of battery size to fast charging power (kWh / kW)
+
+
