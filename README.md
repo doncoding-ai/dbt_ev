@@ -24,7 +24,10 @@ dbt_ev/
 ├── snapshots/
 ├── tests/
 └── README.md
-
+---
+## Architecture
+![Architecture Diagram](./DBT_ETL.png)  
+*Diagram illustrates the flow from data ingestion to dashboards.*
 
 
 ---
