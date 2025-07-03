@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 # ⚡ dbt_ev: Electric Vehicle Analytics with dbt + Snowflake
 =======
 Welcome to your new dbt Data Engineering project!
->>>>>>> d78b274afa75078ebcad99b80fa5467d269fb47f
+
 
 This project uses **dbt (data build tool)** to model, clean, and transform electric vehicle specification data stored in **Snowflake**, enabling analytics and dashboarding for automotive insights.
 I have sourced this data from Kaggle Check the data here:
