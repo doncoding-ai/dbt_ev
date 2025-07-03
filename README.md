@@ -1,7 +1,8 @@
 # ⚡ dbt_ev: Electric Vehicle Analytics with dbt + Snowflake
 
 This project uses **dbt (data build tool)** to model, clean, and transform electric vehicle specification data stored in **Snowflake**, enabling analytics and dashboarding for automotive insights.
-
+I have sourced this data from Kaggle:
+https://www.kaggle.com/datasets/urvishahir/electric-vehicle-specifications-dataset-2025?resource=download
 ---
 
 ## 📁 Project Structure
@@ -11,9 +12,9 @@ dbt_ev/
 │ ├── staging/
 │ │ └── stg_ev_data.sql # Raw data staging from Snowflake source
 │ ├── marts/
-│ │ ├── dim_model/
-│ │ │ ├── dim_model.sql # Brand-model dimension with surrogate keys
-│ │ │ └── dim_model.yml
+│ │ ├── dimension_model/
+│ │ │ ├── dimension_model.sql # Brand-model dimension with surrogate keys
+│ │ │ └── dimension_model.yml
 │ │ ├── fact_ev_specs/
 │ │ │ ├── fact_ev_specs.sql # Fact table with normalized and engineered metrics
 │ │ │ └── fact_ev_specs.yml
@@ -37,7 +38,7 @@ This table contains specifications of 400+ electric vehicles (brands, battery, r
 
 ## 🔧 Key Transformations
 
-### ✅ `dim_model`
+### ✅ `dimension_model`
 - Deduplicates and normalizes brand-model combinations
 - Assigns a surrogate `model_id` key
 
@@ -97,11 +98,7 @@ Integrate ML predictions for EV performance
 Build CI/CD with GitHub Actions
 
 🧑‍💻 Author
-Built and maintained by [Your Name] — Powered by Snowflake + dbt.
+Built and maintained by doncodingai — Powered by Snowflake + dbt.
 
 📄 License
 MIT License
-
-
-
-Let me know if you want to include a badge (like dbt version or build status) or a diagram (like a DAG image or data flow).
