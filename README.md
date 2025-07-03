@@ -28,7 +28,7 @@ dbt_ev/
 ## Architecture
 ![Architecture Diagram](./DBT_ETL.png)  
 *Diagram illustrates the flow from data ingestion to dashboards.*
-
+![WorfkFlow](./ETL_DATA_FLOW.gif)
 
 ---
 
